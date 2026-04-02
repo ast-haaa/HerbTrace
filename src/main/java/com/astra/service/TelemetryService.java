@@ -1,5 +1,6 @@
 package com.astra.service;
 
+import com.astra.api.dto.AiResponse;
 import com.astra.api.dto.TelemetryMessageDto;
 import com.astra.model.Alert;
 import com.astra.model.Batch;
@@ -24,7 +25,7 @@ import java.util.Optional;
 public class TelemetryService {
 
     private static final Logger log = LoggerFactory.getLogger(TelemetryService.class);
-
+    private final AiService aiService;
     private final TelemetryRepository telemetryRepository;
     private final BatchRepository batchRepository;
     private final SensorReadingRepository sensorReadingRepository;
@@ -33,11 +34,12 @@ public class TelemetryService {
     public TelemetryService(TelemetryRepository telemetryRepository,
                             BatchRepository batchRepository,
                             SensorReadingRepository sensorReadingRepository,
-                            AlertRepository alertRepository) {
+                            AlertRepository alertRepository, AiService aiService) {
         this.telemetryRepository = telemetryRepository;
         this.batchRepository = batchRepository;
         this.sensorReadingRepository = sensorReadingRepository;
         this.alertRepository = alertRepository;
+        this.aiService = aiService;
     }
 
     public Telemetry save(Telemetry t) {
@@ -85,6 +87,16 @@ public class TelemetryService {
             log.info("Created {} alerts for Tulsi boxId={}",
                     alerts.size(), dto.getBoxId());
         }
+
+        double temp = reading.getTemperatureC();
+double humidity = reading.getHumidityPercent();
+double voc = 200; // placeholder (since VOC sensor abhi nahi hai)
+
+AiResponse ai = aiService.getRisk(temp, humidity, voc);
+
+// debug log
+log.info("AI Risk: {}, Warning: {}, Anomaly: {}",
+        ai.risk, ai.warning, ai.anomaly);
     }
 
     private List<Alert> evaluateAlerts(Batch batch, SensorReading reading) {
