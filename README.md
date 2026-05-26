@@ -1,4 +1,3 @@
-````md
 # HerbTrace
 
 Blockchain-Enabled Smart IoT Preservation and Traceability System for Medicinal Herbs
@@ -168,57 +167,50 @@ Sensors → ESP32 → MQTT Broker → Backend Server → Database/IPFS
                                      Blockchain Layer
                                             ↓
                                    Web Dashboard / PWA
-````
+```
 
 ---
 
 # Technology Stack
 
-# Hardware
-
-* ESP32
-* DHT22 Temperature & Humidity Sensor
-* MQ Series VOC/Gas Sensor
-* Relay Module
-* Cooling/Fan Unit
-* Optional Load Cell
-* Power Management Module
+## Hardware
+- ESP32
+- DHT22 Temperature & Humidity Sensor
+- MQ Series VOC/Gas Sensor
+- Relay Module
+- Cooling/Fan Unit
+- Optional Load Cell
+- Power Management Module
 
 ---
 
-# Software Stack
+## Software Stack
 
-## Frontend
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Progressive Web App (PWA)
 
-* HTML
-* CSS
-* JavaScript
-* Progressive Web App (PWA)
+### Backend
+- Node.js
+- FastAPI
+- REST APIs
+- MQTT Protocol
 
-## Backend
+### Database
+- PostgreSQL
 
-* Node.js
-* FastAPI
-* REST APIs
-* MQTT Protocol
+### Storage
+- IPFS (InterPlanetary File System)
 
-## Database
+### Blockchain
+- Polygon
+- Hyperledger (optional permissioned network)
 
-* PostgreSQL
-
-## Storage
-
-* IPFS (InterPlanetary File System)
-
-## Blockchain
-
-* Polygon
-* Hyperledger (optional permissioned network)
-
-## Communication
-
-* MQTT
-* WebSockets
+### Communication
+- MQTT
+- WebSockets
 
 ---
 
@@ -239,121 +231,108 @@ Sensors → ESP32 → MQTT Broker → Backend Server → Database/IPFS
 # Core Modules
 
 ## 1. Sensor Monitoring Module
-
 Responsible for:
-
-* Sensor data collection
-* Calibration
-* Real-time monitoring
-* Threshold comparison
+- Sensor data collection
+- Calibration
+- Real-time monitoring
+- Threshold comparison
 
 ---
 
 ## 2. IoT Communication Module
-
 Handles:
-
-* MQTT communication
-* Device synchronization
-* Real-time transmission
-* Connectivity management
+- MQTT communication
+- Device synchronization
+- Real-time transmission
+- Connectivity management
 
 ---
 
 ## 3. Smart Preservation Module
-
 Controls:
-
-* Cooling systems
-* Airflow
-* Humidity regulation
-* Preservation automation
+- Cooling systems
+- Airflow
+- Humidity regulation
+- Preservation automation
 
 ---
 
 ## 4. Blockchain Logging Module
-
 Stores:
-
-* Critical environmental logs
-* Shipment records
-* User actions
-* Alert history
-* Verification records
+- Critical environmental logs
+- Shipment records
+- User actions
+- Alert history
+- Verification records
 
 ---
 
 ## 5. Dashboard and Analytics Module
-
 Provides:
-
-* Monitoring interface
-* Data visualization
-* Traceability analytics
-* Historical analysis
-* Device management
+- Monitoring interface
+- Data visualization
+- Traceability analytics
+- Historical analysis
+- Device management
 
 ---
 
 ## 6. QR Verification Module
-
 Provides:
-
-* Product authentication
-* Shipment verification
-* Blockchain-linked traceability
+- Product authentication
+- Shipment verification
+- Blockchain-linked traceability
 
 ---
 
 # Healthcare and Pharmaceutical Adaptation
 
 HerbTrace can also be adapted for:
-
-* Pharmaceutical raw material monitoring
-* Vaccine cold-chain logistics
-* Medical storage systems
-* Drug transportation monitoring
-* Clinical supply chain management
+- Pharmaceutical raw material monitoring
+- Vaccine cold-chain logistics
+- Medical storage systems
+- Drug transportation monitoring
+- Clinical supply chain management
 
 ---
 
 # Future Scope
 
-* AI-based spoilage prediction
-* Machine learning analytics
-* GPS-enabled live transport tracking
-* Mobile application
-* Multi-language support
-* Smart contract automation
-* Healthcare ERP integration
-* Pharmaceutical cold-chain management
-* Automated compliance reporting
-* Digital twin monitoring systems
+- AI-based spoilage prediction
+- Machine learning analytics
+- GPS-enabled live transport tracking
+- Mobile application
+- Multi-language support
+- Smart contract automation
+- Healthcare ERP integration
+- Pharmaceutical cold-chain management
+- Automated compliance reporting
+- Digital twin monitoring systems
 
 ---
 
 # Applications
 
-* Medicinal herb preservation
-* Pharmaceutical supply chains
-* Agricultural logistics
-* Organic product traceability
-* Cold-chain monitoring
-* Healthcare transportation
-* Smart warehousing
+- Medicinal herb preservation
+- Pharmaceutical supply chains
+- Agricultural logistics
+- Organic product traceability
+- Cold-chain monitoring
+- Healthcare transportation
+- Smart warehousing
 
 ---
 
 # Advantages
 
-* Reduces spoilage
-* Maintains medicinal quality
-* Enables real-time monitoring
-* Provides transparent traceability
-* Prevents data tampering
-* Improves accountability
-* Supports healthcare adaptation
-* Enhances supply chain trust
+- Reduces spoilage
+- Maintains medicinal quality
+- Enables real-time monitoring
+- Provides transparent traceability
+- Prevents data tampering
+- Improves accountability
+- Supports healthcare adaptation
+- Enhances supply chain trust
 
 ---
 
@@ -387,7 +366,6 @@ npm start
 ## Run Frontend
 
 Open:
-
 ```text
 index.html
 ```
@@ -441,13 +419,13 @@ HerbTrace/
 
 # Research and Innovation Areas
 
-* IoT-Based Smart Preservation
-* Blockchain Traceability
-* Smart Agriculture
-* Healthcare Supply Chain
-* Pharmaceutical Logistics
-* Predictive Monitoring
-* Decentralized Data Systems
+- IoT-Based Smart Preservation
+- Blockchain Traceability
+- Smart Agriculture
+- Healthcare Supply Chain
+- Pharmaceutical Logistics
+- Predictive Monitoring
+- Decentralized Data Systems
 
 ---
 
@@ -456,11 +434,10 @@ HerbTrace/
 Project Name: HerbTrace
 
 Developed for:
-
-* Smart Agriculture
-* Healthcare Supply Chain
-* Pharmaceutical Traceability
-* IoT and Blockchain Innovation
+- Smart Agriculture
+- Healthcare Supply Chain
+- Pharmaceutical Traceability
+- IoT and Blockchain Innovation
 
 ---
 
@@ -473,6 +450,3 @@ MIT License
 # Acknowledgement
 
 HerbTrace is developed as an innovation-focused smart preservation and traceability solution to improve medicinal herb quality retention, healthcare logistics transparency, and secure supply chain monitoring using IoT and blockchain technologies.
-
-```
-```
