@@ -1,0 +1,161 @@
+/**
+ * Mock Data for HerbTrace Consumer Portal
+ * Simulated batches, QR codes, storage history, and provenance timelines.
+ */
+
+export const CONSUMER_BATCHES = [
+  {
+    id: 'HT-2026-ASHW-0192',
+    herbName: 'Ashwagandha Root',
+    botanicalName: 'Withania somnifera',
+    commonName: 'Indian Ginseng',
+    origin: {
+      farm: 'Wayanad High Range Herbal Collective',
+      location: 'Wayanad Agro Eco Zone, Kerala',
+      coordinates: '11.6854° N, 76.1320° E',
+      elevation: '920 meters above sea level',
+      soilType: 'Organic Red Loam',
+    },
+    harvestDate: 'October 12, 2026',
+    expiryDate: 'October 2028',
+    storageBoxId: 'ESP32-BOX-04',
+    qualityGrade: 'Grade A Pharmaceutical',
+    storageHistory: {
+      avgTemp: '21.4°C',
+      tempRange: '19.8°C to 23.4°C',
+      avgHumidity: '54.8%',
+      humidityRange: '52.0% to 56.4%',
+      avgVoc: '0.03 ppm',
+      tamperBreaches: 0,
+      totalHoursMonitored: 144,
+      complianceRate: '99.8%',
+    },
+    recordedAlerts: [
+      {
+        timestamp: 'Oct 13, 2026 • 14:22 IST',
+        type: 'Minor Temperature Fluctuation',
+        description: 'Ambient temperature reached 23.4°C due to outside sunlight, normalized in 12 minutes by active ventilation.',
+        status: 'Resolved Promptly',
+      },
+    ],
+    timeline: [
+      {
+        stage: 'Harvest and Geotagging',
+        date: 'Oct 12, 2026 • 07:30 IST',
+        location: 'Wayanad Farm Plot #04',
+        details: 'Hand harvested at root maturity. Batch registered and minted into decentralized ledger.',
+        verified: true,
+      },
+      {
+        stage: 'Smart Crate Sealing',
+        date: 'Oct 12, 2026 • 09:15 IST',
+        location: 'Wayanad Processing Center',
+        details: 'Sealed inside ESP32-BOX-04 smart chamber. Dual climate sensors initialized and streaming telemetry.',
+        verified: true,
+      },
+      {
+        stage: 'Cold Chain Transit Handoff',
+        date: 'Oct 13, 2026 • 11:00 IST',
+        location: 'Kochi Logistics Gateway',
+        details: 'Transferred to refrigerated vehicle. Continuous MQTT telemetry maintained within safe bounds.',
+        verified: true,
+      },
+      {
+        stage: 'Laboratory Purity Assay',
+        date: 'Oct 14, 2026 • 15:45 IST',
+        location: 'Kerala Phytochemical Testing Lab',
+        details: 'Assay passed with 2.8% active Withanolide content. Zero heavy metals, zero pesticide residues.',
+        verified: true,
+      },
+      {
+        stage: 'Consumer Packaging and QR Affixing',
+        date: 'Oct 15, 2026 • 10:20 IST',
+        location: 'AyurPharma Certified Facility',
+        details: 'Final packaging sealed with cryptographic GS1 QR label linking directly to this immutable audit record.',
+        verified: true,
+      },
+    ],
+    labAssaySummary: {
+      activePotency: '2.8% Withanolides (USP Standard > 1.5%)',
+      moistureContent: '7.8% (Target < 10%)',
+      microbialScreen: 'Pass (Zero E. coli / Salmonella)',
+      heavyMetals: 'Pass (Lead < 0.2 ppm, Cadmium < 0.05 ppm)',
+      certNumber: 'COA-2026-9812-AYUSH',
+    },
+    ledgerBlock: {
+      blockNumber: '491208',
+      merkleHash: '0x7f4a9b81e23c091f8872b4e542918cae7102d91f',
+      consensusNodes: 7,
+    },
+  },
+  {
+    id: 'HT-2026-TULSI-0042',
+    herbName: 'Krishna Tulsi Leaves',
+    botanicalName: 'Ocimum sanctum',
+    commonName: 'Holy Basil',
+    origin: {
+      farm: 'Himalayan Bio Reserves Organic Cooperative',
+      location: 'Doon Valley Foothills, Uttarakhand',
+      coordinates: '30.3165° N, 78.0322° E',
+      elevation: '680 meters above sea level',
+      soilType: 'Alluvial Mountain Silt',
+    },
+    harvestDate: 'October 14, 2026',
+    expiryDate: 'October 2027',
+    storageBoxId: 'ESP32-BOX-09',
+    qualityGrade: 'Export Grade Premium',
+    storageHistory: {
+      avgTemp: '20.8°C',
+      tempRange: '19.2°C to 24.1°C',
+      avgHumidity: '48.9%',
+      humidityRange: '45.0% to 54.0%',
+      avgVoc: '0.02 ppm',
+      tamperBreaches: 0,
+      totalHoursMonitored: 96,
+      complianceRate: '100.0%',
+    },
+    recordedAlerts: [
+      {
+        timestamp: 'Oct 14, 2026 • 18:05 IST',
+        type: 'Humidity Threshold Prewarning',
+        description: 'Relative humidity approached 54% threshold during evening dew. Desiccant airflow activated.',
+        status: 'Resolved Promptly',
+      },
+    ],
+    timeline: [
+      {
+        stage: 'Harvest and Geotagging',
+        date: 'Oct 14, 2026 • 06:15 IST',
+        location: 'Dehradun Valley Farm Unit 11',
+        details: 'Plucked under morning dew guidelines. Batch registered with geolocation stamp.',
+        verified: true,
+      },
+      {
+        stage: 'Smart Crate Sealing',
+        date: 'Oct 14, 2026 • 08:30 IST',
+        location: 'Foothills Aggregation Depot',
+        details: 'Placed in ESP32-BOX-09 with micro climate monitoring engaged.',
+        verified: true,
+      },
+      {
+        stage: 'Laboratory Purity Assay',
+        date: 'Oct 15, 2026 • 14:10 IST',
+        location: 'AYUSH Analytical Testing Lab',
+        details: 'Essential Eugenol verified at 68.4%. Pure aromatic volatile oil profile confirmed.',
+        verified: true,
+      },
+    ],
+    labAssaySummary: {
+      activePotency: '68.4% Essential Eugenol (High Potency)',
+      moistureContent: '6.4% (Target < 8%)',
+      microbialScreen: 'Pass (Microbial load within export limits)',
+      heavyMetals: 'Pass (Non detectable)',
+      certNumber: 'COA-2026-8802-HIMAL',
+    },
+    ledgerBlock: {
+      blockNumber: '492014',
+      merkleHash: '0x3c99e1208fb67ad1005b8214ce5190a6237b7fa1',
+      consensusNodes: 7,
+    },
+  },
+];
